@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/tlo_pogoda" />
+
+        <Spinner
+            android:id="@+id/listTownsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="37dp" />
+
+        <TextView
+            android:id="@+id/tempTexView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="221dp"
+            android:layout_marginStart="81dp"
+            android:text="..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tempTexView"
+            android:layout_marginBottom="143dp"
+            android:text="..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tempTexView"
+            android:layout_marginBottom="67dp"
+            android:text="..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="207dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/termometr" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="53dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="126dp"
+            app:srcCompat="@drawable/cisnienie" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="53dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="39dp"
+            app:srcCompat="@drawable/cloud" />
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="84dp"
+            android:text="Coordinates:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/coordinateLonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/yourWeatherBtn"
+            android:layout_alignStart="@+id/imageView"
+            android:text="..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="..."
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/yourWeatherBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/TextView"
+            android:layout_marginEnd="13dp"
+            android:onClick="giveYourWeather"
+            android:text="your weather" />
+
+        <TextView
+            android:id="@+id/coordinateLatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/coordinateLonTextView"
+            android:layout_marginStart="106dp"
+            android:text="..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/downloaderImage"
+            android:layout_width="182dp"
+            android:layout_height="171dp"
+            android:layout_alignEnd="@+id/yourWeatherBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
